@@ -1,0 +1,119 @@
+BODY
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1b4076;
+}
+
+.container
+{
+    min-width: 500px;
+    min-height: 1062px;
+    width: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(background.png);
+    background-size: 600px 1062px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#results
+{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#buttons
+{
+    position: relative;
+}
+
+#result
+{
+    background-color: #9b9b9b;
+    width: 450px;
+    height: 125px;
+    margin: 0;
+    padding: 0 25px;
+    position: absolute;
+    border: 0;
+    left: 0;
+    top: 65px;
+    font-family: system-ui;
+    font-size: 50px;
+    text-align: right;
+}
+
+BUTTON
+{
+    background-color: #d5d5d5;
+    border: 0;
+    border-radius: 0;
+    width: 110px;
+    height: 85px;
+    position: absolute;
+
+    font-size: 45px;
+}
+
+#sign, #clear
+{
+    font-size: 35px;
+}
+#clearEntry
+{
+    font-size: 30px;
+}
+
+#seven, #four, #one, #zero { left: 0px; }
+#sign, #eight, #five, #two, #decimal { left: 130px; }
+#clear, #nine, #six, #three, #equal { left: 260px; }
+#clearEntry, #divide, #multiply, #subtract, #add { left: 390px; }
+
+#sign, #clear, #clearEntry { top: 405px; }
+#seven, #eight, #nine, #divide { top: 510px; }
+#four, #five, #six, #multiply { top: 615px; }
+#one, #two, #three, #subtract { top: 720px; }
+#zero, #decimal, #equal, #add { top: 825px; }
+
+.resultchar
+{
+  display: inline-block;
+  width: 48.5px;
+  height: 90px;
+  background: url('digits-darkgrey.png') 0 0 no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+  font: 0/0 Arial;
+  color: rgba(255,255,255,0);
+  text-indent: -9999px;
+  z-index: 1;
+}
+
+.digit0 { background-position: 0 0; }
+.digit1 { background-position: -48.5px 0; }
+.digit2 { background-position: -97px 0; }
+.digit3 { background-position: -145.5px 0; }
+.digit4 { background-position: -194px 0; }
+.digit5 { background-position: -242.5px 0; }
+.digit6 { background-position: -291px 0; }
+.digit7 { background-position: -339.5px 0; }
+.digit8 { background-position: -388px 0; }
+.digit9 { background-position: -436.5px 0; }
+
+.resultchar.decimal
+{
+  width: 8px;
+  background-position: -485px 0;
+}
+
+.resultchar.negative
+{
+  background-position: -494.5px 0;
+  width: 31.5px;
+}
